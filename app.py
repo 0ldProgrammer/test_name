@@ -8,8 +8,6 @@ import re
 
 app = flask.Flask(__name__)
 
-SECRET_PASSWORD = "d;k3]#u.Cf:]W?#s"
-
 @app.route("/")
 def index_page():
         return flask.Response(json.dumps({"information":{"api_version":"1.0",
